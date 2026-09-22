@@ -234,6 +234,171 @@
             color: #777;
             line-height: 1.5;
         }
+
+        /* =========================
+   CABANG LOMBA
+========================= */
+
+        .lomba {
+            background: #f8fafc;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #0d6efd;
+        }
+
+        .section-heading h2 {
+            font-size: 2rem;
+        }
+
+        .section-heading p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+
+        /* Card */
+
+        .lomba-card {
+            height: 100%;
+            background: #fff;
+            border: 1px solid #e9eef5;
+            border-radius: 18px;
+            overflow: hidden;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+            transition: all 0.25s ease;
+        }
+
+        .lomba-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+        }
+
+
+        /* Image */
+
+        .lomba-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background: #f1f5f9;
+        }
+
+        .lomba-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        /* Body */
+
+        .lomba-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .lomba-body h5 {
+            font-weight: 700;
+            margin-bottom: 16px;
+            min-height: 24px;
+        }
+
+
+        /* Buttons */
+
+        .lomba-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .lomba-actions .btn {
+            flex: 1;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 8px 10px;
+        }
+
+        .btn-juknis {
+            color: #0d6efd;
+            background: #eef5ff;
+            border: 1px solid #dbeafe;
+        }
+
+        .btn-juknis:hover {
+            background: #0d6efd;
+            color: white;
+        }
+
+        .btn-wa {
+            color: #198754;
+            background: #edf9f2;
+            border: 1px solid #d8f3e3;
+        }
+
+        .btn-wa:hover {
+            background: #198754;
+            color: white;
+        }
+
+
+        /* =========================
+   MOBILE
+========================= */
+
+        @media (max-width: 576px) {
+
+            .lomba {
+                padding-top: 40px !important;
+                padding-bottom: 40px !important;
+            }
+
+            .section-heading {
+                margin-bottom: 30px !important;
+            }
+
+            .section-heading h2 {
+                font-size: 1.6rem;
+            }
+
+            .section-heading p {
+                font-size: 0.88rem;
+            }
+
+            .lomba-card {
+                border-radius: 14px;
+            }
+
+            .lomba-body {
+                padding: 14px 10px 12px;
+            }
+
+            .lomba-body h5 {
+                font-size: 0.88rem;
+                line-height: 1.3;
+                min-height: 34px;
+                margin-bottom: 10px;
+            }
+
+            .lomba-actions {
+                gap: 5px;
+            }
+
+            .lomba-actions .btn {
+                font-size: 0.7rem;
+                padding: 7px 5px;
+            }
+
+            .lomba-actions i {
+                margin-right: 2px;
+            }
+        }
     </style>
 </head>
 
@@ -265,7 +430,7 @@
             <h3 class="mt-2">UIN KENDARI 2026</h3>
             <p class="mt-3 fs-5">Bersiaplah untuk ajang bergengsi pelajar SMA/sederajat yang mengasah intelektual,
                 spiritual, dan sportivitas!</p>
-            <a href="#" class="btn btn-warning btn-lg mt-3 fw-bold shadow-sm">
+            <a href="https://forms.gle/ADx8zQrzCQoxarV58" class="btn btn-warning btn-lg mt-3 fw-bold shadow-sm">
                 <i class="bi bi-pencil-square me-2"></i> Daftar Sekarang
             </a>
 
@@ -336,7 +501,7 @@
 
                         <!-- CTA -->
                         <div class="mt-4">
-                            <a href="#" target="_blank" class="btn btn-danger">
+                            <a href="https://forms.gle/ADx8zQrzCQoxarV58" target="_blank" class="btn btn-danger">
                                 Daftar Sekarang
                                 <span>→</span>
                             </a>
@@ -377,133 +542,232 @@
     </section> -->
 
     <!-- Cabang Lomba -->
-    <section class="lomba text-center">
+    <section class="lomba py-5">
         <div class="container">
-            <h2>Cabang Lomba</h2>
-            <div class="row mt-4 g-4">
+
+            <div class="section-heading text-center mb-5">
+                <span class="section-label">KOMPETISI</span>
+                <h2 class="fw-bold mt-2">Cabang Lomba</h2>
+                <p class="text-muted">
+                    Pilih cabang lomba dan dapatkan informasi lengkapnya melalui juknis.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
                 <!-- Pidato Islami -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="logo.png" alt="Pidato Islami">
-                        <div class="card-body">
-                            <h5 class="card-title">Pidato Islami</h5>
-                            <p class="card-text">Lomba Pidato Islami adalah kompetisi yang menguji kemampuan peserta
-                                dalam menyampaikan dakwah secara lugas dengan gaya masing-masing dai agar mudah diterima
-                                oleh audience dengan mengedepankan prinsip jelas, benar dan efektif.</p>
-                            <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-file-earmark-text"></i> Lihat
-                                Juknis</a>
-                            <a href="#" class="btn btn-success btn-sm"><i class="bi bi-whatsapp"></i> Gabung Grup</a>
+                <div class="col-6 col-lg-4">
+                    <div class="lomba-card">
+
+                        <div class="lomba-image">
+                            <img src="o2aser.png" alt="Pidato Islami">
                         </div>
+
+                        <div class="lomba-body">
+
+                            <h5>Pidato Islami</h5>
+
+                            <div class="lomba-actions">
+                                <a href="https://drive.google.com/file/d/1zt5SjvDRwxyImMbBNTCmAOfkz6fDlK7B/view?usp=drive_link"
+                                    class="btn btn-juknis">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span>Juknis</span>
+                                </a>
+
+                                <a href="https://chat.whatsapp.com/KDHuJwUgmOoHEaffYko0SC?s=cl&p=i&mlu=4&ilr=4"
+                                    class="btn btn-wa">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <span>Grup</span>
+                                </a>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
+
 
                 <!-- Cerdas Cermat Ekonomi -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="logo.png" alt="Cerdas Cermat Ekonomi">
-                        <div class="card-body">
-                            <h5 class="card-title">Cerdas Cermat Ekonomi</h5>
-                            <p class="card-text">Lomba Cerdas Cermat Ekonomi Syariah adalah ajang kompetisi yang
-                                dirancang untuk menguji pengetahuan, pemahaman, dan keterampilan peserta dalam bidang
-                                ekonomi syariah. Tujuan dari lomba ini adalah untuk mendorong generasi muda, khususnya
-                                para siswa SMA/MA sederajat, untuk lebih mendalami prinsip-prinsip ekonomi syariah dan
-                                mengaplikasikannya dalam kehidupan sehari-hari serta dalam karir profesional mereka di
-                                masa depan.
-                            </p>
-                            <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-file-earmark-text"></i> Lihat
-                                Juknis</a>
-                            <a href="#" class="btn btn-success btn-sm"><i class="bi bi-whatsapp"></i> Gabung Grup</a>
+                <div class="col-6 col-lg-4">
+                    <div class="lomba-card">
+
+                        <div class="lomba-image">
+                            <img src="o2aser.png" alt="Cerdas Cermat Ekonomi">
                         </div>
+
+                        <div class="lomba-body">
+
+                            <h5>Cerdas Cermat Ekonomi</h5>
+
+                            <div class="lomba-actions">
+                                <a href="#" class="btn btn-juknis">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span>Juknis</span>
+                                </a>
+
+                                <a href="#" class="btn btn-wa">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <span>Grup</span>
+                                </a>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
+
+
                 <!-- Olimpiade Sains -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="logo.png" alt="Olimpiade Sains">
-                        <div class="card-body">
-                            <h5 class="card-title">Olimpiade Sains</h5>
-                            <p class="card-text">Olimpiade Sains adalah wahana olimpiade dalam bidang Ilmu Sains seperti
-                                Matematika, Biologi, dan Fisika bagi peserta didik SMA dan atau yang sederajat untuk
-                                meningkatkan mutu pendidikan khususnya bidang sains yang berasaskan pendidikan karakter
-                                meliputi religiusitas, integritas, nasionalisme, kemandirian dan gotong royong.</p>
-                            <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-file-earmark-text"></i> Lihat
-                                Juknis</a>
-                            <a href="#" class="btn btn-success btn-sm"><i class="bi bi-whatsapp"></i> Gabung Grup</a>
+                <div class="col-6 col-lg-4">
+                    <div class="lomba-card">
+
+                        <div class="lomba-image">
+                            <img src="o2aser.png" alt="Olimpiade Sains">
                         </div>
+
+                        <div class="lomba-body">
+
+                            <h5>Olimpiade Sains</h5>
+
+                            <div class="lomba-actions">
+                                <a href="#" class="btn btn-juknis">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span>Juknis</span>
+                                </a>
+
+                                <a href="https://chat.whatsapp.com/DLm4bpyozqb1DVfLFkn4tD?s=cl&p=i&mlu=4&ilr=4"
+                                    class="btn btn-wa">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <span>Grup</span>
+                                </a>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
+
+
                 <!-- Debat Bahasa Inggris -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="logo.png" alt="Debat Bahasa Inggris">
-                        <div class="card-body">
-                            <h5 class="card-title">Debat Bahasa Inggris</h5>
-                            <p class="card-text">Lomba Debat Bahasa Inggris adalah kompetisi yang menguji kemampuan
-                                peserta dalam membuat dan mempertahankan argumentasi ilmiah, baik pro maupun kontra,
-                                terhadap isu yang telah ditentukan. Peserta harus mampu mengungkapkan ide dengan baik
-                                dan benar dalam bahasa Inggris, menunjukkan penguasaan pengetahuan global, menganalisis,
-                                membuat penilaian, dan meyakinkan audiens bahwa argumentasi mereka logis dan solutif.
-                            </p>
-                            <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-file-earmark-text"></i> Lihat
-                                Juknis</a>
-                            <a href="#" class="btn btn-success btn-sm"><i class="bi bi-whatsapp"></i> Gabung Grup</a>
+                <div class="col-6 col-lg-4">
+                    <div class="lomba-card">
+
+                        <div class="lomba-image">
+                            <img src="o2aser.png" alt="Debat Bahasa Inggris">
                         </div>
-                    </div>
-                </div>
-                <!-- Debat Umum -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="logo.png" alt="Debat Umum">
-                        <div class="card-body">
-                            <h5 class="card-title">Debat Konstitusi</h5>
-                            <p class="card-text">Debat Konstitusi adalah kegiatan yang bertujuan untuk melatih kemampuan
-                                berpikir kritis, berbicara di depan umum, dan memahami aspek-aspek penting dalam
-                                konstitusi dan hukum dasar negara. Kegiatan ini ditunjukan bagi siswa SMA untuk
-                                meningkatkan wawasan dan keterampilan dalam bidang konstitusi dan demokrasi.
-                            </p>
-                            <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-file-earmark-text"></i> Lihat
-                                Juknis</a>
-                            <a href="#" class="btn btn-success btn-sm"><i class="bi bi-whatsapp"></i> Gabung Grup</a>
+
+                        <div class="lomba-body">
+
+                            <h5>Debat Bahasa Inggris</h5>
+
+                            <div class="lomba-actions">
+                                <a href="https://drive.google.com/file/d/1e0MjHpdX53PRMgq8Dxe7vVFrk8bHyLsr/view?usp=drive_link"
+                                    class="btn btn-juknis">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span>Juknis</span>
+                                </a>
+
+                                <a href="https://chat.whatsapp.com/EdIJzJvnMGzAbDDNeIhmwX?s=cl&p=i&mlu=4&ilr=4"
+                                    class="btn btn-wa">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <span>Grup</span>
+                                </a>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
 
 
+                <!-- Debat Konstitusi -->
+                <div class="col-6 col-lg-4">
+                    <div class="lomba-card">
 
-
-
-
-                <!-- Badminton -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="logo.png" alt="Badminton">
-                        <div class="card-body">
-                            <h5 class="card-title">Badminton</h5>
-                            <p class="card-text">Tunjukkan ketangkasan dan sportivitasmu di lapangan bulutangkis!</p>
-                            <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-file-earmark-text"></i> Lihat
-                                Juknis</a>
-                            <a href="#" class="btn btn-success btn-sm"><i class="bi bi-whatsapp"></i> Gabung Grup</a>
+                        <div class="lomba-image">
+                            <img src="o2aser.png" alt="Debat Konstitusi">
                         </div>
+
+                        <div class="lomba-body">
+
+                            <h5>Debat Konstitusi</h5>
+
+                            <div class="lomba-actions">
+                                <a href="#" class="btn btn-juknis">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span>Juknis</span>
+                                </a>
+
+                                <a href="https://chat.whatsapp.com/EdIJzJvnMGzAbDDNeIhmwX?s=cl&p=i&mlu=4&ilr=4"
+                                    class="btn btn-wa">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <span>Grup</span>
+                                </a>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
 
                 <!-- Futsal -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="logo.png" alt="Futsal">
-                        <div class="card-body">
-                            <h5 class="card-title">Futsal</h5>
-                            <p class="card-text">Buktikan kerja sama dan strategi terbaik timmu di ajang futsal pelajar!
-                            </p>
-                            <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-file-earmark-text"></i> Lihat
-                                Juknis</a>
-                            <a href="#" class="btn btn-success btn-sm"><i class="bi bi-whatsapp"></i> Gabung Grup</a>
+                <div class="col-6 col-lg-4">
+                    <div class="lomba-card">
+
+                        <div class="lomba-image">
+                            <img src="o2aser.png" alt="Futsal">
                         </div>
+
+                        <div class="lomba-body">
+
+                            <h5>Futsal</h5>
+
+                            <div class="lomba-actions">
+                                <a href="#" class="btn btn-juknis">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span>Juknis</span>
+                                </a>
+
+                                <a href="https://chat.whatsapp.com/D4JXDDez0AYGqnpUiF0K9B?s=cl&p=i&mlu=4&ilr=4"
+                                    class="btn btn-wa">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <span>Grup</span>
+                                </a>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
+                <!-- Badminton -->
+                <div class="col-6 col-lg-4">
+                    <div class="lomba-card">
 
+                        <div class="lomba-image">
+                            <img src="o2aser.png" alt="Badminton">
+                        </div>
 
+                        <div class="lomba-body">
 
+                            <h5>Badminton</h5>
+
+                            <div class="lomba-actions">
+                                <a href="#" class="btn btn-juknis">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span>Juknis</span>
+                                </a>
+
+                                <a href="https://chat.whatsapp.com/FfpjsqtQBri3ikGE6mYlYt?s=sw&p=i&mlu=4&ilr=4"
+                                    class="btn btn-wa">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <span>Grup</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
 
 
 
